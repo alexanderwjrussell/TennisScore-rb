@@ -5,7 +5,10 @@ def score(value1, value2)
 end
 
 def score_converter(number)
-  number = number.gsub "0", "Love"
+  if number == "0"
+    number = number.gsub "0", "Love"
+  end
+  number
 end
 
 end
