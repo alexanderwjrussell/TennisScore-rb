@@ -10,4 +10,8 @@ it "Returns Love-Love when score is 0-0" do
   expect(@Tennis_Score.score("0", "0")).to eq("Love-Love")
 end
 
+it "Returns 15-Love when score is 15-0" do
+  expect(@Tennis_Score.score("15", "0")).to eq("15-Love")
+end
+
 end
