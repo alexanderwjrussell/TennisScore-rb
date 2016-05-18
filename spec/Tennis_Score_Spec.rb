@@ -7,7 +7,7 @@ before :each do
 end
 
 it "Returns Love-Love when score is 0-0" do
-  expect(@Tennis_Score.add("0", "0")).to eq("Love-Love")
+  expect(@Tennis_Score.score("0", "0")).to eq("Love-Love")
 end
 
 end
