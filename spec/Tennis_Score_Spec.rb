@@ -30,4 +30,8 @@ it "Returns Deuce when score is 40-40" do
   expect(@Tennis_Score.score("40", "40")).to eq("Deuce")
 end
 
+it "Returns 40-A when score is 40-A" do
+  expect(@Tennis_Score.score("40", "A")).to eq("40-A")
+end
+
 end
