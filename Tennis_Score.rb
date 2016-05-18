@@ -1,15 +1,11 @@
 class Tennis_Score
 
 def score(value1, value2)
-  if value1 == "0"
-    value1 = "Love"
-  end
+  score_converter(value1) + "-" + score_converter(value2)
+end
 
-  if value2 == "0"
-    value2 = "Love"
-  end
-
-  value1 + "-" + value2
+def score_converter(number)
+  number = number.gsub "0", "Love"
 end
 
 end
